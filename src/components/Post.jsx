@@ -82,9 +82,15 @@ export function Post({ author, publishedAt, content}) {
                     placeholder="Deixe um comentário"
                     value={newCommentText}
                     onChange={handleNewCommentChange}
+                    required={true}
                 />
 
-                <button type='submit'>Publicar</button>
+                <button 
+                    type='submit' 
+                    disabled={newCommentText.length == 0}
+                >
+                    Publicar
+                </button>
 
             </form>
 
