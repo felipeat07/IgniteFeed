@@ -71,6 +71,10 @@
     align-items: center;
 }
 
+.commentBox footer button:focus{
+    box-shadow: none;
+}
+
 .commentBox footer button:hover {
     color: var(--green-300);
 }
